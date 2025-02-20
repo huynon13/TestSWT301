@@ -1,0 +1,116 @@
+/* Reset default styles */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+h2 {
+    text-align: center;
+    color: #3a7c5b;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Table styling */
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+th {
+    background-color: #3a7c5b;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+tr:hover {
+    background-color: #e8f1ec;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f7fafc;
+}
+
+/* Canvas styling */
+canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar_menu {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+      
+ 
+}
+
+/* Style the links inside the navigation bar */
+.navbar_menu a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px ;
+  font-size: 17px;
+  
+}
+
+/* Change the color of links on hover */
+.navbar_menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a green background color to the active link */
+.navbar_menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+.navbar_menu .icon {
+  display: none;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    th, td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}
